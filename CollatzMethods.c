@@ -1,5 +1,7 @@
 
 #include "CollatzMethods.h"
+#include <stdlib.h>
+#include <string.h>
 #include <stddef.h>
 #include <malloc.h>
 #include <stdio.h>

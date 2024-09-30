@@ -2,6 +2,8 @@
 #include "Cache.h"
 #include <malloc.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <stdbool.h>
 
 cacheEntry newCache(int N, int steps)
@@ -31,7 +33,7 @@ int checkCacheType(char* string)// check cache type once at startup to use strcm
 	}
 }
 
-void checkCache(cacheEntry cache[], int size, int N) //returns -1 unless cache holds N
+int checkCache(cacheEntry cache[], int size, int N) //returns -1 unless cache holds N
 {
 	int count = 0;
 	while ((count<size)&&(cache[count].N>=1))

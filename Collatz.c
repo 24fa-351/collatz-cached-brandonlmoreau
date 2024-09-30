@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <malloc.h>
 #include <time.h>
+#include <stdlib.h>
+#include <string.h>
 
 #include "CollatzMethods.h"
 #include "Cache.h"
