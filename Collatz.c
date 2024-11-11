@@ -23,7 +23,7 @@ int main(int argc,char *argv[])
     
     cacheType = checkCacheType(argv[4]);
     numberArray = makeRandomNumberArray(atoi(argv[1]), atoi(argv[2]), nSize);
-    cache = (struct cacheEntry*)malloc(nSize * sizeof(cacheEntry));
+    cache = (struct cacheEntry*)malloc(cacheSize * sizeof(cacheEntry));
     file = fopen("myCSV.csv", "w");
     fprintf(file, "count,N,steps till 1\n");
     nSize--;
